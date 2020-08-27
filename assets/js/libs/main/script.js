@@ -3,13 +3,13 @@ $(document).ready(function()
 
     if ($('.text-slider').length == 1) 
     {
-        const typed_strings = 'CEO DevFolio,Web Developer,Web Designer,Frontend Developer,Graphic Designer';
+        const typed_strings = 'comming soon,comming soon,comming soon,comming soon,comming soon';
             var typed = new Typed('.text-slider', 
             {
                 strings: typed_strings.split(','),
-                typeSpeed: 80,
+                typeSpeed: 50,
                 loop: true,
-                backDelay: 1100,
+                backDelay: 100,
                 backSpeed: 30
             });
         }
@@ -21,14 +21,15 @@ $(document).ready(function()
             if ($(window).scrollTop() > pixels) 
             {
 
-               $('nav').removeClass('bg-dark');
-               $('nav').addClass('bg-white');
-               $('.nav-link').css('color','#0078ff')
-               $('.navbar-brand').css('color','#0078ff')
+               $('nav.main-nav').removeClass('bg-dark');
+               $('nav.main-nav').addClass('bg-white');
+               $('.main-nav .nav-link').css('color','#0078ff')
+               $('.main-nav .navbar-brand').css('color','#0078ff')
                $('.back-to-top').fadeIn('slow');
-               $('.navbar-b').css('padding-top','13px');
-               $('.navbar-b').css('padding-bottom','13px');
-
+            //    $('.navbar-b').css('padding-top','13px');
+            //    $('.navbar-b').css('padding-bottom','13px');
+               $('.navbar-b').css('padding-top','0px');
+               $('.navbar-b').css('padding-bottom','0px');
             }
             else 
             {
@@ -43,23 +44,19 @@ $(document).ready(function()
             }     
             
             
-            $('section').each(function()
-            {   
+        //     $('section').each(function()
+        //     {   
                
-               if($(window).scrollTop() > $(this).offset().top)
-               {
+        //        if($(window).scrollTop() > $(this).offset().top)
+        //        {
                 
-                    const className = $(this).attr('class');
-                    $('.nav-item a').removeClass('active2');
-                    $('[data-target = ' + className + "]").addClass('active2');
+        //             const className = $(this).attr('class');
+        //             $('.nav-item a').removeClass('active2');
+        //             $('[data-target = ' + className + "]").addClass('active2');
                   
-                   
-                  
-                   
-   
-               }
+        //        }
              
-           });
+        //    });
 
         });
 
