@@ -77,5 +77,15 @@
   <script src="assets/js/libs/lightbox/lightbox.min.js"></script>
   <!--Main-->
   <script src="assets/js/libs/main/script.js"></script>
+  <!-- contact us height script -->
+  <script>
+    if( window.innerHeight != $("header").height() ){
+      $(".header").height(window.innerHeight);
+    }
+
+  $(window).resize(function() {
+      $(".header").height(window.innerHeight);
+  });
+  </script>
 </body>
 </html>

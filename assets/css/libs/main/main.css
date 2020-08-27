@@ -507,6 +507,10 @@ body {
   cursor: pointer;
 }
 
+.work .owl-dots .owl-dot {
+  outline: none !important ;
+}
+
 .work .owl-dots .owl-dot.active span {
   background-color: #1B1B1B;
   width: 25px;
@@ -933,6 +937,31 @@ body {
   border: 1px solid var(--success);
   color: white !important;
   background: var(--success) !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* width hover */
+::-webkit-scrollbar:hover {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 /* ****************** additional ****************** */
