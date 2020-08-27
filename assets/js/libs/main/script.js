@@ -28,8 +28,8 @@ $(document).ready(function()
                $('.back-to-top').fadeIn('slow');
             //    $('.navbar-b').css('padding-top','13px');
             //    $('.navbar-b').css('padding-bottom','13px');
-               $('.navbar-b').css('padding-top','0px');
-               $('.navbar-b').css('padding-bottom','0px');
+               $('.navbar-b').css('padding-top','2px');
+               $('.navbar-b').css('padding-bottom','2px');
             }
             else 
             {

@@ -77,6 +77,20 @@ body {
   background-color: transparent !important;
 } */
 
+@media screen and (min-width: 1024px) and (min-height: 1320px) {
+  /* iPad Pro */
+  .h-md {
+    height:100px
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-height: 1310px) {
+  /* Laptop */
+  .h-lg {
+    height:200px
+  }
+}
+
 .bg-blacktrans {
   background-color: transparent !important;
 }
@@ -132,6 +146,7 @@ body {
   font-weight: 300;
   font-size: normal !important;
   text-align: center;
+  line-height: 1;
 }
 
 .header .content p .text-slider-items {
